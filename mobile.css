@@ -1,0 +1,205 @@
+/* navigationbar */
+#navbar {
+    display: inline-block;   
+}
+
+#links {
+    display: none; 
+    flex-direction: column;
+    z-index: 5;
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 60%;
+    height: 90%;
+    padding-top: 3rem ;
+    background: black;
+    opacity: 0.85;
+    border-radius: 5px;
+}
+
+#navbar ul li{
+    font-size: 1.25rem;
+}
+
+#navbar  li {
+    padding: 15px 10px;
+}
+#hamburger{
+    display: block;
+    z-index: 10;
+}
+
+.show{
+    display:block !important ;
+    animation-name: animateside;
+    animation-duration: 0.3s;
+}
+@keyframes animateside{
+    from{width: 0%;}
+    to{width: 60%;}  
+}
+#logo img {
+    height: 27px;
+    width: 65px;
+    margin: 2px 10px;
+}
+
+#logo p {
+    font-size: 3.5vw !important;
+}
+
+/* mainbody */
+#sech {
+    font-size: 2rem;
+}
+
+#secp {
+    font-size: 1.5rem;
+}
+
+#merge {
+    flex-direction: column;
+}
+
+#merge input[type=search],
+select {
+    width: 70vw;
+    height: 1.9rem;
+    margin-top: 0.5rem;
+    padding: 5px 10px;
+}
+
+#merge select {
+    width: 125px;
+}
+
+/* services container */
+.container {
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 7rem;
+    margin-left: 1rem;
+}
+
+.box h3 {
+    padding-top: 5px;
+    font-weight: 200;
+    font-size: 1rem;
+    color: rgb(174, 5, 5);
+}
+
+.box p {
+    padding:0px 4px 5px 4px;
+    font-size: 14px;
+}
+
+.box {
+    margin: 10px 5px;
+     width:44vw; 
+}
+
+.box img {
+     height: 7.5rem; 
+}
+
+/* collections */
+#collection {
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+#seccollection {
+    line-height: 1.25rem;
+    padding: 2rem 0.5rem;
+}
+
+#seccollection h1 {
+    font-size: 1.25rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+#seccollection p {
+    font-size: 0.95rem;
+}
+
+.item img {
+    margin: 0;
+    width: 40vw;
+    height: 52vw;
+    border-radius: 5px;
+}
+
+.item {
+    margin: 5px;
+}
+
+.item p{
+    bottom: 2px;
+    font-size: 0.95rem !important;
+}
+
+/* questions section */
+#qcontainer div{
+    width: 95%;
+}
+#qcontainer .q{
+    padding: 10px 18px;
+}
+#qcontainer{
+    font-size: 1rem;
+}
+#qcontainer h1{
+    font-size: 1.25rem;
+}
+/* appdownload */
+#appdownload {
+    flex-direction: row-reverse;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#aside {
+    margin-left: 5px;
+}
+
+#aside h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#aside input[type=text] {
+    width: 10rem;
+    height: 1.5rem;
+}
+
+#aside input[type=button] {
+    width: 6rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+}
+
+#appimg {
+    margin: 0rem;
+    margin-left: 1rem;
+}
+
+#appimg img {
+    width: 5rem;
+    border-radius: 5px;
+}
+
+.storesimg {
+    width: 7rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .container{
+        justify-content: center;
+        margin-left: 0;
+    }
+   .box {
+    width: 270px;
+   }
+  }

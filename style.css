@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navigation bar*/
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* top: 0px; 
+    position: sticky; A sticky element requires a threshold to be specified, which means that you must set a value other than "auto" for at least one of the following properties:
+    top        right        bottom          left*/
+}
+
+#logo img {
+    height: 35px;
+    width: 90px;
+    margin-top: 5px;
+}
+
+#links {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px min(10px,0.75vw);
+}
+
+#navbar ul li a:hover {
+    color: maroon;
+    cursor: pointer;
+}
+
+#hamburger {
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+#hamburger div {
+    background-color: white;
+    width: 32px;
+    height: 4px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+/*background*/
+body {
+    background-color:white;
+}
+
+#sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 27rem;
+    z-index: -1;
+    background: url(/images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*main body*/
+#sec {
+    margin-top: 8vh;
+    text-align: center;
+}
+
+#sech {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+#secp {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+}
+
+#merge {
+    display: flex;
+    justify-content: center;
+
+}
+
+#merge input[type=search],
+select {
+    width: 30vw;
+    height: 2.2rem;
+    margin-top: 1.4rem;
+    padding: 5px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    background-color: whitesmoke;
+}
+
+#merge select {
+    width: 150px;
+}
+
+#merge i {
+    margin-top: 1.4rem;
+    font-size: 2rem;
+    color: rgb(205, 32, 6);
+}
+
+/*services conatiner*/
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10.5rem;
+}
+
+.box {
+    margin: 0px 12px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: scale 0.3s;
+    background-color: whitesmoke;
+   
+    /* this will change the scaling so that transition appears smoothly */
+}
+
+.box h3 {
+    text-align: left;
+    padding: 0px 0px 0px 5px;
+    font-weight: 500;
+    color: rgb(174, 5, 5);
+    font-size: 1.35rem;
+}
+
+.box p {
+    padding: 3px 10px 6px 15px;
+    font-size: 1.1rem;
+}
+
+.box img {
+    width: 100%; 
+      height: 9.5rem; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+/* collection */
+#seccollection {
+    padding: 5rem 2rem 3rem 2rem;
+    max-width: 70rem;
+    margin: auto;
+    font-family: Okra, Helvetica, sans-serif;
+    line-height: 1.75rem;
+}
+
+#seccollection h1,
+#aside h1,#qcontainer h1
+/*h1this is from appdownload  */
+    {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+#seccollection p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#collection {
+    display: flex;
+    justify-content: center;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 22rem;
+    border-radius: 10px;
+    transition: scale 0.2s;
+}
+.item {
+    margin: 10px;
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 15px;
+    color: white;
+    font-size: 1.25rem !important;
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+.item img:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+/* Questions section */
+.ans.show {
+    max-height: 320px;
+  }
+  
+  .border{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+#qcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1.25rem;
+  }
+  
+  #qcontainer div {
+     width: max(85%,550px); 
+     overflow-y: hidden;
+    box-sizing: border-box;
+  }
+  
+  #qcontainer .q {
+     width: 100%; 
+     padding: 14px 18px; 
+    display: flex;
+     color: rgb(28, 28, 28); /*this color is not getting selected to question*/
+    justify-content: space-between;
+  }
+  
+  #qcontainer .q p{
+ color: rgb(28, 28, 28); /*if we add p tag then color is gettting applied to question */
+  }
+  #qcontainer .ans {
+     width: 100%; 
+     padding: 0px 20px; 
+    color: grey;
+  }
+  
+  .ans {
+    max-height: 0;
+    transition: max-height 500ms;
+  }
+  
+  .q:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+/* app download section*/
+
+#appdownload {
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 2.25rem;
+    background-color: rgb(234, 121, 159);
+    padding-top: 1rem;
+}
+
+#aside input[type=text],
+input[type=button] {
+    width: 16rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 10px 0px;
+}
+
+#aside input[type=text] {
+    padding-left: 10px;
+}
+
+#aside input[type=button] {
+    width: 8rem;
+    height: 2.25rem;
+}
+
+#appimg {
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+#appimg img {
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.storesimg {
+    width: 9rem;
+    margin: 5px 10px;
+}
+
+.storesimg:hover {
+    cursor: pointer;
+}
+
+#aside input[type=button]:hover {
+    background-color: darkblue;
+    color: whitesmoke;
+}

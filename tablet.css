@@ -1,0 +1,127 @@
+/* navigation bar */
+#navbar ul li {
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    padding: 5px;
+}
+
+#logo p {
+    font-size: min(3.5vw, 1.1rem) !important;
+}
+
+/* background */
+#navbar::before {
+    height: 25rem;
+}
+
+/* mainbody */
+.box {
+    margin: 0px 7px;
+}
+
+#sech {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#secp {
+    font-size: 1.8rem;
+}
+
+#merge input[type=search],
+select {
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+#merge select {
+    width: 130px;
+}
+
+/* services container */
+.container {
+    margin-top: 11.25rem;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+.box p {
+    font-size: 1rem;
+}
+
+.box img {
+    height: 8rem;
+}
+
+/* collections */
+#collection {
+    flex-wrap: wrap;
+}
+
+#seccollection {
+    line-height: 1.25rem;
+    padding: 4rem 2rem;
+}
+
+#seccollection h1,#qcontainer h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0rem;
+}
+
+#seccollection p {
+    font-size: 1rem;
+    margin: 7px, 0px;
+
+}
+
+.item img {
+    margin: 0;
+    max-height: 18rem;
+}
+
+.item {
+    margin: 10px;
+}
+
+.item p {
+    font-size: 1.25rem !important;
+}
+
+ .item p{
+    bottom: 10px;
+ }
+/* questions section */
+#qcontainer{
+    font-size: 1.1rem;
+}
+/* app download */
+#appdownload {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#aside h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#aside input[type=text] {
+    width: 12rem;
+    height: 1.5rem;
+}
+
+#aside input[type=button] {
+    width: 6.5rem;
+    height: 1.5rem;
+
+    font-size: 0.75rem;
+}
+
+.storesimg {
+    width: 7.5rem;
+}
