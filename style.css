@@ -13,9 +13,6 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* top: 0px; 
-    position: sticky; A sticky element requires a threshold to be specified, which means that you must set a value other than "auto" for at least one of the following properties:
-    top        right        bottom          left*/
 }
 
 #logo img {
@@ -64,7 +61,7 @@ body {
     background-color:white;
 }
 
-#sec::before {
+#mainsec::before {
     content: "";
     position: absolute;
     top: 0;
@@ -137,8 +134,6 @@ select {
     font-family: 'Times New Roman', Times, serif;
     transition: scale 0.3s;
     background-color: whitesmoke;
-   
-    /* this will change the scaling so that transition appears smoothly */
 }
 
 .box h3 {
@@ -157,8 +152,7 @@ select {
 .box img {
     width: 100%; 
       height: 9.5rem; 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+   border:10px 10px 0px 0px;
 }
 
 .box:hover {
