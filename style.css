@@ -242,12 +242,12 @@ select {
      width: 100%; 
      padding: 14px 18px; 
     display: flex;
-     color: rgb(28, 28, 28); /*this color is not getting selected to question*/
+     color: rgb(28, 28, 28); 
     justify-content: space-between;
   }
   
   #qcontainer .q p{
- color: rgb(28, 28, 28); /*if we add p tag then color is gettting applied to question */
+ color: rgb(28, 28, 28);
   }
   #qcontainer .ans {
      width: 100%; 
